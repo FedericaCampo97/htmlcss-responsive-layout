@@ -3,13 +3,16 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: 'PT Sans', sans-serif;
+}
 header{
     width: 100%;
     background-color: #0084FD;
     height: 60px;
 }
 .blockheader{
-    width: 1200px;
+    width: 1000px;
     height: 55px;
     margin: auto;
     display: flex;
@@ -27,7 +30,7 @@ header{
     height: 50px;
 }
 .container{
-    width: 1200px;
+    width: 1000px;
     height: 500px;
     background-color: rgba(38, 38, 240, 0.521);
     margin: auto;
@@ -43,7 +46,7 @@ header{
     width: calc(100% / 3 * 2);
     padding: 15px 15px;
 }
-.card{
+.col1 > .card{
     border-radius: 20px;
     background-color: #B5DDFF;
     width: 100%;
@@ -54,6 +57,12 @@ header{
     width: calc(100% / 3 );
     padding: 15px 15px;
 }
+.col > .card {
+    border-radius: 20px;
+    background-color: #B5DDFF;
+    width: 100%;
+    height: 100%;
+}
 .container-strategicplanning{
     width: 100%;
     height: 650px;
@@ -61,7 +70,7 @@ header{
     margin-top: 60px;
 }
 .rectangle{
-    max-width: 1200px;
+    max-width: 1000px;
     height: 630px;
     background-color: violet;
     margin: auto;
@@ -75,10 +84,8 @@ header{
 }
 section{
     margin: auto;
-    width: 1200px;
-    height: 750px;
-    background-color: rgba(255, 166, 0, 0.801);
-    margin-top: 60px;
+    width: 1000px;
+    margin: 100px auto;
     padding-top: 30px;
 
 }
@@ -90,7 +97,7 @@ section{
     padding-top: 20px;
 }
 .partners{
-    width: 1200px;
+    width: 1000px;
     height: 180px;
     background-color: rgba(255, 68, 0, 0.589);
     margin-top: 20px;
@@ -98,13 +105,232 @@ section{
 .partners > .h2 {
     width: 600px;
     height: 80px;
-    background-color: yellow;
     margin: auto;
     margin: 20px auto;
 }
 .partners > .paragraph {
     width: 900px;
     height: 70px;
-    background-color: yellow;
     margin: auto;
+}
+.comment{
+    width: 1000px;
+    margin: auto;
+    margin-top: 30px;
+}
+.commentindividual{
+    width: 1000px;
+    background-color: #9792E4;
+    border-radius: 45px;
+    margin: 10px 0px;
+    display: flex;
+    padding: 15px;
+}
+.commentindividual > .phototestimonial {
+    width: 210px;
+    height: 210px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 150px;
+}
+.avatar1 {
+    background-image: url(./img/testimonial1.jpg);
+}
+.avatar2 {
+    background-image: url(./img/testimonial2.jpg);
+}
+.avatar3 {
+    background-image: url(./img/testimonial3.jpg);
+}
+.commentindividual > .texttestimonial {
+    width: calc(100% - 230px);
+    padding: 50px;
+    line-height: 27px;
+    color: white;
+}
+.commentindividual > .texttestimonial > h2 {
+    margin-top: 20px;
+}
+.calendar{
+    background-color: #9792E4;
+    width: 100%;
+    height: 900px;
+    margin: auto;
+    margin: 40px auto;
+    padding: 25px 0px;
+}
+.blockcalendar{
+    width: 1000px;
+    height: 850px;
+    margin: auto;
+    padding: 20px 0px;
+}
+.blockcalendar > .benefits {
+    width: 430px;
+    height: 40px;
+    margin: auto;
+    margin-bottom: 35px;
+}
+.blockcalendar > .benefits > h1 {
+    text-align: center;
+    color: white;
+}
+.row2{
+    width: 100%;
+    display: flex;
+}
+.col3{
+    width: calc(100% / 3);
+    height: 380px;
+    padding: 8px 15px;
+}
+.col3 > .card {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    padding: 27px 20px;
+}
+.col3 > .card > h1 {
+    font-size: 55px;
+    color: #9792E4;
+} 
+.col3 > .card > h2 {
+    color: #9792E4;
+    padding: 20px 0px;
+}
+.col3 > .card > p {
+    line-height: 27px;
+}
+.col3 > .card > button {
+    background-color: #9792E4;
+    color: white;
+    padding: 12px 53px;
+    border-radius: 35px;
+    cursor: pointer;
+    margin-top: 15px;
+    border: none;
+}
+.aboutus{
+    width: 1000px;
+    height: 570px;
+    margin: 50px auto;
+    display: flex;
+}
+.col4{
+    width: 70%;
+    height: 550px;
+    padding: 15px 15px;
+}
+.col4 > .card{
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+}
+.col4 > .card > p {
+    line-height: 28px;
+    margin: 40px 0px;
+}
+.col4 > .card > h1 {
+    color: #9792E4;
+    font-size: 40px;
+}
+.col5{
+    width: 30%;
+    height: 550px;
+    padding: 15px 15px;
+}
+.col5 > .card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 30px;
+}
+.col5 > .card > img {
+    width: 100%;
+    height: auto;
+    border-radius: 150px;
+   
+}
+.col5 > .card > i {
+    position: absolute;
+    right: 31px;
+    top: 40px;
+    font-size: 50px;
+    color: #9792E4;
+}
+.col5 > .card > p {
+    font-size: 23px;
+    color: #9792E4;
+    margin-top: 20px;
+}
+.col5 > .card > button {
+    background-color: #9792E4;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.itsfree{
+    width: 100%;
+    height: 550px;
+    background-color: #9792E4;
+    padding: 10px 10px;
+}
+.itsfree > div {
+    width: 500px;
+    height: 530px;
+    margin: auto;
+    text-align: center;
+}
+.itsfree > div > p {
+    color: white;
+    margin-top: 45px;
+    text-align: center;
+}
+.itsfree > div > h2 {
+    text-align: center;
+    color: white;
+    font-size: 38px;
+    margin: 20px 0px;
+}
+.itsfree > div > h1 {
+    text-align: center;
+    color: #FDC15F;
+    font-size: 80px;
+    margin-top: 37px;
+}
+.itsfree > div > button {
+    margin-top: 40px;
+    background-color: white;
+    color: #9792E4;
+    padding: 20px 60px;
+    border: none;
+    border-radius: 40px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.itsfree > div > p > a {
+    color: white;
+}
+footer{
+    width: 100%;
+    height: 220px;
+    background-color: #333333;
+}
+.blockfooter{
+    width: 700px;
+    height: 200px;
+    margin: auto;
+    padding: 20px 0px;
+}
+.blockfooter > p {
+    text-align: center;
+    margin: 30px 0px;
+    color: white;
+}
+.blockfooter > p > a {
+    color: #9792E4;
 }
