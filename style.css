@@ -9,40 +9,49 @@ body{
 header{
     width: 100%;
     background-color: #0084FD;
-    height: 60px;
 }
 .blockheader{
     width: 1000px;
-    height: 55px;
     margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .logo{
-    background-color: blue;
+    color: white;
     width: 15%;
-    height: 50px;
+    font-size: 50px;
+    font-family: 'PT Sans', sans-serif;
+    margin: 14px 0px;
 }
 .login{
-    background-color: blue;
-    width: 35%;
-    height: 50px;
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.login > a {
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+}
+.login > button {
+    border: none;
+    padding: 14px 28px;
+    border-radius: 50px;
+    font-size: 16px;
 }
 .container{
     width: 1000px;
-    height: 500px;
-    background-color: rgba(38, 38, 240, 0.521);
     margin: auto;
     margin-top: 50px;
 }
 .row{
-    height: 250px;
     width: 100%;
     display: flex;
 }
 .col1{
-    height: 250px;
+    height: 320px;
     width: calc(100% / 3 * 2);
     padding: 15px 15px;
 }
@@ -51,9 +60,41 @@ header{
     background-color: #B5DDFF;
     width: 100%;
     height: 100%;
+    display: flex;
+}
+.col1 > .card > div {
+    width: calc(100% / 2);
+    padding: 20px 0px 0px 20px;
+    position: relative;
+}
+.col1 > .card > div > h3 {
+    color: #0084FD;
+    margin-bottom: 20px;
+    font-size: 21px;
+}
+.col1 > .card > div > p {
+    color: gray;
+    line-height: 27px;
+    margin-bottom: 20px;
+}
+.col1 > .card > div > button {
+    background-color: #0084FD;
+    color: white;
+    padding: 10px 50px;
+    border: none;
+    border-radius: 35px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+.col1 > .card > div > img {
+    width: 70%;
+    height: auto;
+    position: absolute;
+    bottom: 0px;
+    left: 55px;
 }
 .col{
-    height: 250px;
+    height: 320px;
     width: calc(100% / 3 );
     padding: 15px 15px;
 }
@@ -62,56 +103,113 @@ header{
     background-color: #B5DDFF;
     width: 100%;
     height: 100%;
+    padding: 18px;
+    text-align: center;
+}
+.col > .card > i {
+    font-size: 60px;
+    color: #0084FD;
+} 
+.col > .card > h3 {
+    margin: 30px 0px;
+    color: #0084FD;
+}
+.col > .card > p {
+    line-height: 26px;
+
 }
 .container-strategicplanning{
     width: 100%;
-    height: 650px;
     background-color: #9792E4;
     margin-top: 60px;
 }
 .rectangle{
     max-width: 1000px;
-    height: 630px;
-    background-color: violet;
     margin: auto;
     display: flex;
+    padding-top: 50px;
 }
 .col2{
     width: calc(100% / 2);
-    height: 610px;
-    background-color: rgba(224, 78, 224, 0.685);
-    margin: 10px 15px;
+    height: 800px;
+    margin: 10px 20px;
+    text-align: center;
+    position: relative;
+}
+.col2 > img {
+    width: 95%;
+    height: auto;
+}
+.col2 > h2 {
+    text-align: left;
+    margin: 110px 0px 40px 0px;;
+    color: white;
+    font-size: 39px;
+}
+.col2 > p {
+    text-align: left;
+    color: white;
+    line-height: 27px;
+}
+.col2 > div {
+    width: 99%;
+    height: 500px;
+    background-color: white;
+    border-radius: 40px; 
+    position: absolute;
+    bottom: 54px;
+    text-align: center;
+    padding: 40px;
+}
+.col2 > div > img {
+    width: 55%;
+    height: auto;
+}
+.col2 > div > h2 {
+    margin-top: 30px;
+}
+.col2 > div > p {
+    margin-top: 20px;
+    line-height: 27px;
+    font-style: italic;
+}
+.col2 > div > button {
+    background-color: #9792E4;
+    color: black;
+    border: none;
+    border-radius: 30px;
+    padding: 15px 20px;
+    margin: 20px;
+    cursor: pointer;
 }
 section{
     margin: auto;
     width: 1000px;
-    margin: 100px auto;
+    margin: 50px auto;
     padding-top: 30px;
 
 }
-.testimonials{
+section > p {
     width: 160px;
     height: 35px;
-    background-color: red;
     margin: auto;
     padding-top: 20px;
 }
 .partners{
     width: 1000px;
-    height: 180px;
-    background-color: rgba(255, 68, 0, 0.589);
-    margin-top: 20px;
+    margin: 30px 0px 58px 0px;
 }
-.partners > .h2 {
-    width: 600px;
-    height: 80px;
-    margin: auto;
-    margin: 20px auto;
+.partners > h2 {
+    text-align: center;
+    font-size: 45px;
+    color: #9792E4;
+    margin-bottom: 40px;
 }
-.partners > .paragraph {
+.partners > p {
     width: 900px;
-    height: 70px;
+    text-align: center;
     margin: auto;
+    line-height: 27px;
 }
 .comment{
     width: 1000px;
@@ -122,7 +220,7 @@ section{
     width: 1000px;
     background-color: #9792E4;
     border-radius: 45px;
-    margin: 10px 0px;
+    margin: 23px 0px;
     display: flex;
     padding: 15px;
 }
