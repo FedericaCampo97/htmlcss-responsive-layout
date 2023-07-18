@@ -39,7 +39,7 @@ header{
     border: none;
     padding: 14px 28px;
     border-radius: 50px;
-    font-size: 1px;
+    cursor: pointer;
 }
 .blockiconheader{
     display: none;
@@ -54,7 +54,6 @@ header{
     display: flex;
 }
 .col1{
-    height: 320px;
     width: calc(100% / 3 * 2);
     padding: 15px 15px;
 }
@@ -89,7 +88,7 @@ header{
     margin-top: 15px;
 }
 .col1 > .card > div > img {
-    width: 70%;
+    width: 68%;
     height: auto;
     position: relative;
     bottom: -37px;
@@ -153,7 +152,6 @@ header{
 }
 .col2 > div {
     width: 99%;
-    height: 500px;
     background-color: white;
     border-radius: 40px;
     position: relative;
@@ -179,7 +177,7 @@ header{
     border: none;
     border-radius: 30px;
     padding: 15px 20px;
-    margin: 20px;
+    margin-top: 20px;
     cursor: pointer;
 }
 section{
@@ -220,7 +218,7 @@ section > p {
     padding: 15px;
 }
 .commentindividual > .phototestimonial {
-    max-width: 210px;
+    width: 210px;
     height: 210px;
     background-size: cover;
     background-position: center;
@@ -267,11 +265,11 @@ section > p {
 .row2{
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
 }
 .col3{
     width: calc(100% / 3);
-    height: 380px;
-    padding: 8px 15px;
+    padding: 15px 15px;
 }
 .col3 > .card {
     background-color: white;
@@ -346,16 +344,17 @@ section > p {
     color: #9792E4;
 }
 .col5 > .card > p {
-    font-size: 23px;
+    font-size: 25px;
     color: #9792E4;
     margin-top: 20px;
 }
 .col5 > .card > button {
     background-color: #9792E4;
+    font-size: 16px;
     color: white;
     border: none;
     border-radius: 20px;
-    padding: 5px 10px;
+    padding: 9px 20px;
     margin-top: 20px;
     cursor: pointer;
 }
@@ -422,7 +421,7 @@ footer{
     margin-top: 60px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 550px) {
     .blockiconheader{
         display: block;
         font-size: 30px;
@@ -533,5 +532,71 @@ footer{
     }
     .blockfooter{
         padding: 25px 20px;
+    }
+}
+
+@media screen and (min-width: 551px) and (max-width: 900px) {
+    .login{
+        display: none;
+    }
+    .blockiconheader{
+        display: block;
+        font-size: 30px;
+        color: white;
+    }
+    .blockheader {
+        padding: 0px 24px;
+    }
+    .col1 > .card {
+        display: block;
+    }
+    .col1 > .card > div {
+        width: 100%;
+    }
+    .col4 > .card > h1 {
+        font-size: 66px;
+    }
+    .col1 > .card > div > img {
+        width: 50%;
+        bottom: -4px;
+        left: 0px;
+    }
+    .rectangle{
+        display: block ;
+    }
+    .itsfree > div > h2 {
+        font-size: 39px;
+    }
+    .col2{
+        width: 100%;
+        margin: 0;
+        padding: 40px;
+    }
+    .col2 > h2 {
+        margin: 60px 0px 40px 0px;
+        color: white;
+        font-size: 50px;
+    }
+    .col2 > div{
+        position: inherit;
+    }
+    .partners{
+        margin: 0;
+    }
+    .comment{
+        padding: 30px;
+    }
+    .col4{
+        width: 60%;
+    }
+    .col5{
+        width: 40%;
+    }
+    .col3{
+        width: 50%;
+    }
+    section > p {
+        margin-bottom: 20px;
+        line-height: 26px;
     }
 }
