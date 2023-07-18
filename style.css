@@ -41,6 +41,9 @@ header{
     border-radius: 50px;
     font-size: 1px;
 }
+.blockiconheader{
+    display: none;
+}
 .container{
     max-width: 1000px;
     margin: auto;
@@ -254,7 +257,6 @@ section > p {
     padding: 20px 0px;
 }
 .blockcalendar > .benefits {
-    height: 40px;
     margin: auto;
     margin-bottom: 35px;
 }
@@ -372,6 +374,7 @@ section > p {
     color: white;
     margin-top: 45px;
     text-align: center;
+    line-height: 26px;
 }
 .itsfree > div > h2 {
     text-align: center;
@@ -420,6 +423,17 @@ footer{
 }
 
 @media screen and (max-width: 480px) {
+    .blockiconheader{
+        display: block;
+        font-size: 30px;
+        color: white;
+    }
+    .blockheader {
+        padding: 0px 22px;
+    }
+    .login{
+        display: none;
+    }
     .row{
         display: block;
     }
@@ -432,7 +446,7 @@ footer{
     }
     .col1 > .card > div {
         width: 100%;
-        padding: 20px 20px 0 20px;
+        padding: 20px 23px 0 20px;
     }
     .col1{
         height: auto;
@@ -471,5 +485,53 @@ footer{
         width: 100%;
         padding: 20px;
         text-align: center;
+    }
+    .row2 {
+        display: block;
+    }
+    .col3 {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .benefits > h1 {
+        margin-bottom: 20px;
+    }
+    .aboutus{
+        display: block;
+    }
+    .col4 > .card > h1 {
+        font-size: 36px;
+    }
+    .col4 {
+        width: 100%;
+    }
+    .col5 {
+        width: 100%;
+        padding: 20px 20px;
+    }
+    .col5 > .card > img {
+        width: 70%;
+    }
+    .col5 > .card > i {
+        right: 103px;
+    }
+    .col5 > .card > p {
+        font-size: 27px;
+    }
+    .col5 > .card > button {
+        padding: 10px 26px;
+        margin-top: 25px;
+    }
+    .itsfree > div > h2{
+        font-size: 33px;
+    }
+    .itsfree > div > h1 {
+        font-size: 56px;
+    }
+    .itsfree > div > p {
+        margin: 43px 10px;
+    }
+    .blockfooter{
+        padding: 25px 20px;
     }
 }
